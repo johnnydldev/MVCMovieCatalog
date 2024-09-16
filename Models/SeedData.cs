@@ -51,6 +51,22 @@ public static class SeedData
                     Genre = "Western",
                     Price = 3.99M,
                     Rating = "R"
+                },
+                new Movie
+                {
+                    Title = "Deadpool & Wolverine",
+                    ReleaseDate = DateTime.Parse("2024-07-27"),
+                    Genre = "Action",
+                    Price = 90M,
+                    Rating = "R"
+                },
+                new Movie
+                {
+                    Title = "Talk to me",
+                    ReleaseDate = DateTime.Parse("2023-08-15"),
+                    Genre = "Suspense",
+                    Price = 60M,
+                    Rating = "R"
                 }
             );
             context.SaveChanges();
