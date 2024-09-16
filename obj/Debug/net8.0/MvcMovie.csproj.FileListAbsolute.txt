@@ -250,3 +250,4 @@ C:\Users\JohnnyDL\Documents\Proyectos C#\MVC\MvcMovie\bin\Debug\net8.0\runtimes\
 C:\Users\JohnnyDL\Documents\Proyectos C#\MVC\MvcMovie\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 C:\Users\JohnnyDL\Documents\Proyectos C#\MVC\MvcMovie\obj\Debug\net8.0\MvcMovie.csproj.AssemblyReference.cache
 C:\Users\JohnnyDL\Documents\Proyectos C#\MVC\MvcMovie\obj\Debug\net8.0\MvcMovie.csproj.Up2Date
+C:\Users\JohnnyDL\Documents\Proyectos C#\MVC\MvcMovie\obj\Debug\net8.0\MvcMovie.sourcelink.json
