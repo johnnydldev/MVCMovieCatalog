@@ -1,0 +1,67 @@
+﻿@model MvcMovie.Models.MovieGenreViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a class="btn btn-primary round" asp-action="Create">Create New</a>
+</p>
+
+<!--Name movie component filter-->
+<form class="bg-dark text-white" asp-controller="Movies" asp-action="Index" method="get">
+    <select asp-for="MovieGenre" asp-items="Model.Genres">
+        <option value="">All</option>
+    </select>
+    <div class="filter-container mb-2">
+        <label class="control-label ms-2 fw-bold">Title:</label>
+        <input class="form-control-lg" type="text" asp-for="SearchMovie"/>
+        <input class="btn btn-success" type="submit" value="Filter"/>
+    </div>
+</form>
+
+<table class="table table-dark round">
+    <thead class="table-info">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Movies![0].Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movies![0].ReleaseDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movies![0].Genre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movies![0].Price)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Movies!)
+        {
+            <tr class="table-bordered border-white">
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReleaseDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Genre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                    <a class="btn btn-warning round" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a class="btn btn-light round" asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a class="btn btn-danger round" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
