@@ -1,4 +1,4 @@
-# ** MVC MODEL PRACTICE OF HOW WORK WITH RAZOR PAGES***
+# **MVC MODEL PRACTICE OF HOW WORK WITH RAZOR PAGES**
 
 This is the movie index view with its graphic components
 ![first layout movie index view](https://github.com/johnnydldev/MVCMovieCatalog/blob/design/Screenshots/home_record_data_movies_image.png)
